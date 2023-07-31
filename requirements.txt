@@ -1,6 +1,4 @@
 torch>=2.0.1
-torchvision
-torchaudio
 aniso8601
 numpy
 attrs

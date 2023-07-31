@@ -5,18 +5,13 @@ This module provides functionality for App Users.
 """
 from flask import Flask, request
 from PIL import Image
-from io import BytesIO
-from pathlib import Path
-import torch
 from ultralytics import YOLO
-import cv2
 import pytesseract
 from werkzeug.datastructures import FileStorage
 import numpy as np
 import re
 
-# pytesseract.pytesseract.tesseract_cmd = 'tesseract'  # DEV
-pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'  # DEPLOY
+pytesseract.pytesseract.tesseract_cmd = 'tesseract'  # DEV
 
 
 # pylint: disable=E0401
