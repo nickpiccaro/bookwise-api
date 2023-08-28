@@ -5,7 +5,6 @@ This module provides functionality for XYZ.
 
 Author: Your Name
 """
-
 from flask import Flask
 from werkzeug.middleware.proxy_fix import ProxyFix
 from flask_cors import CORS # Import CORS module
@@ -20,5 +19,5 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 api.init_app(app)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
